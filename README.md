@@ -70,7 +70,7 @@ GCP Cloud Run Invocation and Cloud Scheduler Jobs
 
     PRIORITY='1000'  
     RULES='tcp:80,tcp:8080,udp:8000'  
-    DOMAIN='naver.com'  
+    DOMAIN='reddit.com'  
     TARGETTAGS='tags1'  
     NETWORK='default'  
     FREQUENCY='0 */1 * * *'  
