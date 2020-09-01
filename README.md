@@ -64,6 +64,17 @@ GCP Cloud Run Invocation and Cloud Scheduler Jobs
 
 ## Deploying
 
-1. Update the env values and schedule frequency in the deploy.sh for your f/w rules settings, run deploy.sh
+1. Update the env values and schedule frequency in the deploy.sh for your f/w rules settings.
+
+    example:
+
+    PRIORITY='1000'  
+    RULES='tcp:80,tcp:8080,udp:8000'  
+    DOMAIN='naver.com'  
+    TARGETTAGS='tags1'  
+    NETWORK='default'  
+    FREQUENCY='0 */1 * * *'  
+
+1. Run deploy.sh to deploy to Cloud Run and create a new Cloud Scheduler Job.
 
     `sh deploy.sh`
